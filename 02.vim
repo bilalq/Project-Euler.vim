@@ -1,4 +1,5 @@
-" Problem 1 from Project Euler
+" 02.vim
+" Problem 2 from Project Euler
 " By considering the terms in the Fibonacci sequence whose values do not
 " exceed four million, find the sum of the even-valued terms.
 
