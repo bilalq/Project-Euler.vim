@@ -1,12 +1,12 @@
 function! Problem(current)
-  if current > 999
-    return 0
+  let value = 0
+  let current = a:current
+  if (current > 999)
+    let value = 0
   elseif ( (current % 3 == 0) || (current % 5 == 0) )
-    return current + call Problem(current + 1)
+    let value = current + Problem(current + 1)
   else
-    return call Problem(current + 1)
+    let value = Problem(current + 1)
   endif
+  return value
 endfunction
-
-let problem01 = call(Problem(1))
-echom problem01
