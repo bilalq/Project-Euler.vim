@@ -8,5 +8,5 @@ function! Problem(current)
   endif
 endfunction
 
-let problem01 = call(Problem(1)
+let problem01 = call(Problem(1))
 echom problem01
