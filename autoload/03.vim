@@ -5,5 +5,12 @@
 " I can't figure out how to get square roots in VimL, so I got this through 
 " other means.
 
-let limit = 775146
+let limit = 775145
 
+while (limit > 2)
+  if limit > 2
+    echom limit
+    break
+  endif
+  let limit -= 2
+endwhile
